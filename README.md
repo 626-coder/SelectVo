@@ -8,12 +8,14 @@ selectVO generate
 
 ##使用方法：
 引入依赖：
+```pom
        <dependency>
             <groupId>com.sun</groupId>
             <artifactId>tools</artifactId>
             <scope>system</scope>
             <systemPath>${JAVA_HOME}/lib/tools.jar</systemPath>
         </dependency>
+```
 此依赖是为了读取到类内的注释（用于区分表名）
 ![image](https://user-images.githubusercontent.com/72613433/186873423-390e2b2a-c999-498f-b96b-4edd83685f56.png)
 在Run方法中添加要读取的实体类地址，然后调用Util里的println方法即可，可一次读取多个实体类，只需要在sources里添加
